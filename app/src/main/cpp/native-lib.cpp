@@ -14,3 +14,6 @@ Java_com_exa_ej_cppapp_MainActivity_stringFromJNI(
     std::string hello = "Hello from C++";
     return env->NewStringUTF(hello.c_str());
 }
+
+extern "C"
+JNIEXPORT jstring
